@@ -8,11 +8,10 @@ const assertEqual = function(actual, expected) {
 
 const countOnly = function(allItems, itemsToCount){
   let returnObj = {}; //Return this value.
-  //let objKeys = Object.keys(itemsToCount); // Contains all the keys of itemsToCount.
   
   for (let keys in itemsToCount){
     let booleanValue = itemsToCount[keys];
-    //console.log(booleanValue);
+  
     if (booleanValue === true && allItems.includes(keys)){
       returnObj[keys] = 0;
     }
@@ -24,7 +23,6 @@ const countOnly = function(allItems, itemsToCount){
       returnObj[allItems[x]] += 1;
     }
   }
-    console.log(returnObj);
     return returnObj;
 
 }
