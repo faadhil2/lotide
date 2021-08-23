@@ -32,14 +32,16 @@ const eqObjects = function(object1, object2) {
   return false;
 };
 
+module.exports = eqObjects;
+
 //TEST CODE
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-assertEqual(eqObjects(ab, ba),true); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// assertEqual(eqObjects(ab, ba),true); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-assertEqual(eqObjects(ab, abc),false); // => false
+// const abc = { a: "1", b: "2", c: "3" };
+// assertEqual(eqObjects(ab, abc),false); // => false
 
-assertEqual(eqObjects({person: "jim", age: 24}, {person: "jimmy", age: 23}), false); //Should fail
+// assertEqual(eqObjects({person: "jim", age: 24}, {person: "jimmy", age: 23}), false); //Should fail
 
-assertEqual(eqObjects({apple: 3, orange: 4, banana: 5}, {apple: 3, orange: 4, banana: 5}), true); //Should pass
+// assertEqual(eqObjects({apple: 3, orange: 4, banana: 5}, {apple: 3, orange: 4, banana: 5}), true); //Should pass

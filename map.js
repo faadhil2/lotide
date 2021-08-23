@@ -35,13 +35,15 @@ const map = function (array, callback){
 
 };
 
+module.exports = map;
+
 
 //TESTING CODE
-let results1 = map(words, word => word[0]);
-assertArraysEqual(results1, ['g','c','t','m','t']); //Should Pass
+// let results1 = map(words, word => word[0]);
+// assertArraysEqual(results1, ['g','c','t','m','t']); //Should Pass
 
-results1 = map(["Light", "House", "Labs"],word => word[0] )
-assertArraysEqual(results1, ['l','h','l']); // Should Fail
+// results1 = map(["Light", "House", "Labs"],word => word[0] )
+// assertArraysEqual(results1, ['l','h','l']); // Should Fail
 
-results1 = map(["Light", "House", "Labs"],word => word[0] )
-assertArraysEqual(results1, ['L','H','L']); // Should Pass
+// results1 = map(["Light", "House", "Labs"],word => word[0] )
+// assertArraysEqual(results1, ['L','H','L']); // Should Pass

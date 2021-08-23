@@ -42,11 +42,13 @@ const letterPositions = function(sentence) {
   return results;
 };
 
+module.exports = letterPositions;
+
 
 //TEST CODE
-assertArraysEqual(letterPositions("hello").e, [1]); // Pass
-assertArraysEqual(letterPositions("hello").e, [2]); //Fail
-assertArraysEqual(letterPositions("lighthouse in the house").e, [9,16,22]); //Pass
-assertArraysEqual(letterPositions("lighthouse in the house").e, [1]); //Fail
-//console.log(letterPositions("hello"));
-//console.log(letterPositions("lighthouse in the house"));
+// assertArraysEqual(letterPositions("hello").e, [1]); // Pass
+// assertArraysEqual(letterPositions("hello").e, [2]); //Fail
+// assertArraysEqual(letterPositions("lighthouse in the house").e, [9,16,22]); //Pass
+// assertArraysEqual(letterPositions("lighthouse in the house").e, [1]); //Fail
+// //console.log(letterPositions("hello"));
+// //console.log(letterPositions("lighthouse in the house"));
