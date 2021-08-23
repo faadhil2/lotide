@@ -37,13 +37,13 @@ module.exports = assertObjectsEqual;
 
 //TEST CASE
 
-const ab = { a: "1", b: "2" };
-const ba = { b: "2", a: "1" };
-//assertObjectsEqual(eqObjects(ab, ba),true); // => true
+// const ab = { a: "1", b: "2" };
+// const ba = { b: "2", a: "1" };
+// //assertObjectsEqual(eqObjects(ab, ba),true); // => true
 
-const abc = { a: "1", b: "2", c: "3" };
-//assertObjectsEqual((ab, abc),; // => false
+// const abc = { a: "1", b: "2", c: "3" };
+// //assertObjectsEqual((ab, abc),; // => false
 
-assertObjectsEqual({person: "jim", age: 24}, {person: "jimmy", age: 23}); //Should fail
+// assertObjectsEqual({person: "jim", age: 24}, {person: "jimmy", age: 23}); //Should fail
 
-assertObjectsEqual({apple: 3, orange: 4, banana: 5}, {apple: 3, orange: 4, banana: 5}); //Should pass
+// assertObjectsEqual({apple: 3, orange: 4, banana: 5}, {apple: 3, orange: 4, banana: 5}); //Should pass
